@@ -1,0 +1,104 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+@media (max-width: 1600px)
+	.header-menu ul li
+		margin-right: 10px
+		a
+			white-space: normal
+			text-align: center
+@media (max-width: 1440px)
+	.main-slide__footer
+		flex-direction: column
+		align-items: flex-start
+		.btn
+			margin-bottom: 1rem
+			margin-right: 0
+	.main-slider-nav
+		left: -5.5rem
+// ≥1200px
++media-breakpoint-down(lg)
+	.main-slider-nav
+		left: 0
+		top: -3rem
+	.main-slide__header
+		font-size: 34px
+		line-height: 40px
+		margin-bottom: 1.5rem
+	.header-menu
+		margin-left: -30px
+		ul
+			li a
+				font-size: 14px
+				line-height: 16px
+// ≥992px
++media-breakpoint-down(md)
+	.main
+		min-height: 500px
+	.content
+		margin-top: 5%
+	.main-slider-nav
+		display: none
+	.content-label
+		left: unset
+		right: -150px
+		bottom: 50%
+	.header-menu
+		justify-content: flex-end
+		ul
+			display: none
+	.header-btn,.header-phone a
+		display: flex
+		align-items: center
+		justify-content: center
+	.header-btn svg
+		width: 38px
+	.footer
+		padding-top: 45px
+		height: 100px
+		.footer-option .room label, .footer-option input
+			padding: 13px 16px
+		.footer-option__label
+			top: -30px
+	.header-menu
+		margin-right: 0
+// ≥768px
++media-breakpoint-down(sm)
+	.main-slide__header
+		font-size: 26px
+		line-height: 31px
+	.main-slider
+		display: none
+	.main
+		padding: 30px
+		padding-top: 20px
+		background: url(../img/bg_m.png)
+		background-size: cover
+		background-position: center center
+	.main-slide__header
+		margin-bottom: 32px
+	.main-slide__footer .btn
+		margin-bottom: 30px
+	.footer
+		height: 50px
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
